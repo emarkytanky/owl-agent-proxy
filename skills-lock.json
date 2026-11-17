@@ -10,21 +10,10 @@
       "upstreamCommit": "72526e7ea1bb21864915ea235fca257092fa4dd1",
       "upstreamCommitDate": "2026-03-06",
       "vendoredPath": ".agents/skills/free-search-aggregator/SKILL.md",
-      "contentHash": "sha256:4d7b834017bfa50742169b7e39125c9d858e54b25abb5daa71633433f8655edd",
-      "contentHashAlgorithm": "sha256",
-      "contentHashCovers": "raw file bytes of vendoredPath, exactly as committed"
-    },
-    "freeunlimited-websearch": {
-      "source": "lngu/openclaw-skill-freeunlimited-websearch",
-      "sourceType": "github",
-      "skillPath": "SKILL.md",
-      "upstreamCommit": "279115c64bd156fcbc1acce164967b8766ec7921",
-      "upstreamCommitDate": "2026-02-21",
-      "vendoredPath": ".agents/skills/freeunlimited-websearch/SKILL.md",
-      "contentHash": "sha256:57d884009070b8b7a5315dc61ad8c9b1b01d6eca5629f10a4f7d4099d7b3eefa",
+      "contentHash": "sha256:01e3abb8328954c654246ebd87897383ef13058927fce8740119542c23a8c8fa",
       "contentHashAlgorithm": "sha256",
       "contentHashCovers": "raw file bytes of vendoredPath, exactly as committed",
-      "localModification": "frontmatter `name:` normalised to lowercase kebab-case (freeUnlimited-websearch -> freeunlimited-websearch) to satisfy the skills CLI naming contract; body is byte-identical to upstream. Any other difference is a verifier failure."
+      "localModification": "frontmatter `description:` narrowed to multi-provider aggregation and to defer single keyless DuckDuckGo queries to the duckduckgo-search skill (removes the duplicate search trigger); body is byte-identical to upstream. Any body difference is a verifier failure."
     },
     "github-research": {
       "source": "lingzhi227/agent-research-skills",

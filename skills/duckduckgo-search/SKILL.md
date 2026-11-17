@@ -1,6 +1,6 @@
 ---
 name: duckduckgo-search
-description: Free web search using DuckDuckGo. No API key required. Preferred when web_search is unavailable or unsuitable. Supports text, news, image, and video search via ddgs CLI or Python API.
+description: The single keyless DuckDuckGo web search path. No API key required. Use when web_search is unavailable or unsuitable, or when DuckDuckGo-specific text, news, image, or video results are wanted. Multi-provider aggregation with failover is out of scope here — use free-search-aggregator for that.
 source: nousresearch/hermes-agent or openclaw/skills
 pipeline_stage: DEFINE
 ---
@@ -10,6 +10,8 @@ pipeline_stage: DEFINE
 **Pipeline Stage:** DEFINE (Stage 1 – Discover & Research)
 
 **Purpose:** Perform free web searches using DuckDuckGo without requiring an API key. Use when web_search is unavailable or unsuitable, or when DuckDuckGo-specific results are desired.
+
+**Boundary:** this is the **only** skill that claims the keyless DuckDuckGo trigger. `free-search-aggregator` handles 12-provider aggregation and failover and explicitly defers single DuckDuckGo queries here, so exactly one skill competes for the trigger.
 
 **When to use:** During DEFINE stage for research-heavy pipelines when you need current information, documentation, tutorials, or any information requiring web search.
 

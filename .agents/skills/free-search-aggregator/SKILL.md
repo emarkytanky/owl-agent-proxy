@@ -1,6 +1,6 @@
 ---
 name: free-search-aggregator
-description: Quota-aware multi-provider web search for OpenClaw. Supports 12 search providers with automatic failover, task-level deep search (@dual/@deep), real quota checks, and managed result storage under memory/.
+description: Quota-aware multi-provider search aggregation for OpenClaw. Use when a task needs provider-diverse results, automatic failover across 12 search providers, task-level deep search (@dual/@deep), or real quota tracking. Not the trigger for a single keyless DuckDuckGo query — that belongs to the duckduckgo-search skill.
 ---
 
 # Free Search Aggregator

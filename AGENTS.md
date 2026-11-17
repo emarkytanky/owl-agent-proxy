@@ -767,9 +767,6 @@ npx skills add lingzhi227/agent-research-skills --skill github-research --agent 
 # free-search-aggregator
 npx skills add https://github.com/vulcanusalex/free-search-aggregator --skill free-search-aggregator --agent '*' -y
 
-# freeUnlimited-websearch
-npx skills add https://github.com/lngu/openclaw-skill-freeunlimited-websearch --skill freeUnlimited-websearch --agent '*' -y
-
 # you-web
 npx skills add https://github.com/youdotcom-oss/agent-skills --skill you-web --agent '*' -y
 ```
@@ -1603,7 +1600,6 @@ directory listing and this table cannot disagree, because CI runs
 | `exa-web-search-free` | DEFINE | sundial-org/awesome-openclaw-skills |
 | `explain-analyzer` | VERIFY | owl-agent-proxy (migrated from a flat prompt file) |
 | `free-search-aggregator` | DEFINE | not declared in SKILL.md |
-| `freeunlimited-websearch` | DEFINE | not declared in SKILL.md |
 | `github-research` | DEFINE | not declared in SKILL.md |
 | `headroom` | PLAN | not declared in SKILL.md |
 | `impeccable` | REVIEW | not declared in SKILL.md |
@@ -1751,7 +1747,6 @@ Composed of:
 - `duckduckgo-search` (nousresearch/hermes-agent)
 - `exa-web-search-free` (sundial-org/awesome-openclaw-skills)
 - `free-search-aggregator` (vulcanusalex/free-search-aggregator)
-- `freeUnlimited-websearch` (lngu/openclaw-skill-freeunlimited-websearch)
 - `you-web` (youdotcom-oss/agent-skills)
 - `agent-reach` (panniantong/agent-reach)
 
@@ -1796,7 +1791,6 @@ Composed of:
 | https://github.com/parallel-web/parallel-agent-skills | parallel-deep-research + parallel-findall (14.3K installs) |
 | https://github.com/lingzhi227/agent-research-skills | github-research (31 skills) |
 | https://github.com/vulcanusalex/free-search-aggregator | free-search-aggregator (85 installs) |
-| https://github.com/lngu/openclaw-skill-freeunlimited-websearch | freeUnlimited-websearch (565 installs) |
 | https://github.com/youdotcom-oss/agent-skills | you-web (81 installs) |
 | https://github.com/panniantong/agent-reach | agent-reach (16.1K installs) |
 | https://github.com/nousresearch/hermes-agent | duckduckgo-search |

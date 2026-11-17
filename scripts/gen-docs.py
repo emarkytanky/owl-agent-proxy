@@ -52,7 +52,7 @@ DEFAULT_STAGE = {
     "meta-skill": "DEFINE", "github-research": "DEFINE",
     "parallel-deep-research": "DEFINE", "parallel-findall": "DEFINE",
     "you-web": "DEFINE", "free-search-aggregator": "DEFINE",
-    "freeunlimited-websearch": "DEFINE", "owl-proxy": "SHIP",
+    "owl-proxy": "SHIP",
     "owl-proxy-mcp": "SHIP", "impeccable": "REVIEW",
     "devils-advocate": "REVIEW", "headroom": "PLAN",
     "orchestrate": "PLAN", "chain-of-thought": "PLAN",
