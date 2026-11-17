@@ -126,7 +126,6 @@ agent-run run <issue-number> --repo marktantongco/owl-agent-proxy
 | parallel-findall | parallel-web/parallel-agent-skills | DEFINE |
 | github-research | lingzhi227/agent-research-skills | DEFINE |
 | free-search-aggregator | vulcanusalex/free-search-aggregator | DEFINE |
-| freeUnlimited-websearch | lngu/openclaw-skill-freeunlimited-websearch | DEFINE |
 | you-web | youdotcom-oss/agent-skills | DEFINE |
 | agent-skills | Custom stub (`skills/agent-skills/`) | DEFINE |
 | codemap | Custom stub (`skills/codemap/`) | DEFINE |
@@ -163,14 +162,13 @@ agent-run run <issue-number> --repo marktantongco/owl-agent-proxy
 **Path:** none — this stack is a composition of skills, not a directory. Each
 constituent is vendored in `skills/`.
 
-**Stack:** `parallel-deep-research`, `parallel-findall`, `github-research`, `free-search-aggregator`, `freeUnlimited-websearch`, `you-web`, `agent-reach`, `meta-skill` (missing), `brainstorming`, `grilling`, `grill-me`, `writing-plans`, `to-spec`, `domain-modeling`, `grill-with-docs`
+**Stack:** `parallel-deep-research`, `parallel-findall`, `github-research`, `free-search-aggregator`, `you-web`, `agent-reach`, `meta-skill` (missing), `brainstorming`, `grilling`, `grill-me`, `writing-plans`, `to-spec`, `domain-modeling`, `grill-with-docs`
 
 **Install:**
 ```bash
 npx skills add parallel-web/parallel-agent-skills --skill parallel-deep-research --skill parallel-findall --agent '*' -y
 npx skills add lingzhi227/agent-research-skills --skill github-research --agent '*' -y
 npx skills add https://github.com/vulcanusalex/free-search-aggregator --skill free-search-aggregator --agent '*' -y
-npx skills add https://github.com/lngu/openclaw-skill-freeunlimited-websearch --skill freeUnlimited-websearch --agent '*' -y
 npx skills add https://github.com/youdotcom-oss/agent-skills --skill you-web --agent '*' -y
 ```
 

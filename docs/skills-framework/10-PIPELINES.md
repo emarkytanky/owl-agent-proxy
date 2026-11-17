@@ -20,7 +20,7 @@
 
 | Pipeline Stage | Deployment Stage | Skills |
 |----------------|------------------|--------|
-| **DEFINE** | Stage 1 – Discover & Research | `find-skills`, `agent-browser`, `grill-me`, `grilling`, `parallel-deep-research`, `duckduckgo-search`, `exa-web-search-free`, `free-search-aggregator`, `freeUnlimited-websearch`, `you-web`, `agent-reach`, `github-research`, `codemap`, `agent-skills`, `meta-skill` |
+| **DEFINE** | Stage 1 – Discover & Research | `find-skills`, `agent-browser`, `grill-me`, `grilling`, `parallel-deep-research`, `duckduckgo-search`, `exa-web-search-free`, `free-search-aggregator`, `you-web`, `agent-reach`, `github-research`, `codemap`, `agent-skills`, `meta-skill` |
 | **PLAN** | Stage 2 – Plan & Architect | `domain-modeling`, `to-spec`, `grill-with-docs`, `grill-with-tail`, `grill-powers`, `ponytail`, `brainstorming`, `ralph-prompt-multi-task`, `orchestrate`, `chain-of-thought`, `headroom`, `Caveman` |
 | **BUILD** | Stage 3 – Execute | `writing-plans`, `executing-plans`, `subagent-driven-development`, `systematic-debugging`, `parallel-agent-skills` |
 | **VERIFY** | Stage 3 – Verify | `verification-before-completion`, `systematic-debugging` |
@@ -76,7 +76,6 @@
 | `parallel-findall` | parallel-web/parallel-agent-skills (skills.sh) | DEFINE |
 | `github-research` | lingzhi227/agent-research-skills | DEFINE |
 | `free-search-aggregator` | vulcanusalex/free-search-aggregator | DEFINE |
-| `freeUnlimited-websearch` | lngu/openclaw-skill-freeunlimited-websearch | DEFINE |
 | `you-web` | youdotcom-oss/agent-skills | DEFINE |
 | `agent-skills` | Custom stub (`skills/agent-skills/`) | DEFINE |
 | `codemap` | Custom stub (`skills/codemap/`) | DEFINE |
@@ -99,7 +98,6 @@
 npx skills add parallel-web/parallel-agent-skills --skill parallel-deep-research --skill parallel-findall --agent '*' -y
 npx skills add lingzhi227/agent-research-skills --skill github-research --agent '*' -y
 npx skills add https://github.com/vulcanusalex/free-search-aggregator --skill free-search-aggregator --agent '*' -y
-npx skills add https://github.com/lngu/openclaw-skill-freeunlimited-websearch --skill freeUnlimited-websearch --agent '*' -y
 npx skills add https://github.com/youdotcom-oss/agent-skills --skill you-web --agent '*' -y
 ```
 
@@ -139,7 +137,7 @@ Each pipeline flows: **DEFINE → PLAN → BUILD → VERIFY → REVIEW → SHIP*
 
 | Phase | Skills | Role | Source |
 |-------|--------|------|--------|
-| **Research** | `parallel-deep-research`, `free-search-aggregator`, `freeUnlimited-websearch`, `you-web` | Multi-source web research, aggregated results | parallel-web/parallel-agent-skills, vulcanusalex, lngu, youdotcom-oss |
+| **Research** | `parallel-deep-research`, `free-search-aggregator`, `you-web` | Multi-source web research, aggregated results | parallel-web/parallel-agent-skills, vulcanusalex, youdotcom-oss |
 | **Investigation** | `parallel-findall`, `github-research` | Agent reachability, skill discovery across repos, GitHub repo analysis | parallel-web/parallel-agent-skills, lingzhi227 |
 | **Brainstorming** | `brainstorming` (superpowers), `grilling`, `grill-me` | Clarify ideas through Q&A | obra/superpowers, mattpocock/skills |
 | **Planning** | `writing-plans`, `to-spec`, `domain-modeling`, `grill-with-docs` | Break into tasks, write PRD, GLOSSARY.md + ADRs | hazikkhatri/superpowers, mattpocock/skills |
